@@ -341,7 +341,10 @@ a:hover {
 .feature__column-link {
     border-radius: 60px;
     height: 60px;
-    padding: 18px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .feature__column-link > a {
@@ -381,6 +384,10 @@ a:hover {
     line-height: 18px;
     color: #AEABA8;
     max-width: 505px;
+}
+.feature__column-subtext a{
+    color: #AEABA8;
+    text-decoration: underline;
 }
 
 .offer {
@@ -735,6 +742,8 @@ a:hover {
     padding: 12px 70px;
     font-size: 11px;
     line-height: 17px;
+    transition: all 0.3s;
+    cursor: pointer;
 }
 .footer__subscription-button>span{
     color: #A7BBC9;
@@ -743,8 +752,6 @@ a:hover {
     background:#3D434C;
     border-color: #FFFFFF;
     color: #A7BBC9;
-    transition: all 0.3s;
-    cursor: pointer;
 }
 .footer__text>p{
     max-width: 805px;
