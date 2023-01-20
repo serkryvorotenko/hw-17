@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hw-17__Kryvorotenko</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
@@ -12,7 +13,7 @@
         <a class="header__logo" href="#">
             <img src="img/logo.svg" alt="">
         </a>
-        <nav class="header__nav">
+        <nav class="header__nav" id="header__utils">
             <ul class="header__list">
                 <li class="header__item"><a href="#">Products</a></li>
                 <li class="header__item"><a href="#">Features</a></li>
@@ -20,6 +21,11 @@
             </ul>
         </nav>
         <a href="#" class="header__button">Log Into</a>
+        <button class="header__menu" id="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
 </header>
 <main>
@@ -343,4 +349,13 @@
     </div>
 </footer>
 </body>
+<script>
+    let menu = document.getElementById('menu');
+    let header__utils = document.getElementById('header__utils');
+    menu.addEventListener('click', toggleMenu);
+
+    function toggleMenu() {
+        header__utils.classList.toggle('active')
+    }
+</script>
 </html>
