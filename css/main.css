@@ -124,6 +124,9 @@ a:hover {
     padding: 6px 24px;
     margin-left: 100px;
     transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    width: fit-content;
 }
 
 .header__button:hover {
@@ -427,7 +430,7 @@ a:hover {
     background-size: cover;
     background-position: bottom;
     position: relative;
-    padding: 325px 0 58px;
+    padding: 325px 0 58px 40px;
 }
 
 .offer__content {
@@ -862,7 +865,7 @@ a:hover {
     }
 
     .offer {
-        padding: 200px 0 40px;
+        padding: 200px 0 40px 40px;
     }
 }
 
@@ -892,6 +895,35 @@ a:hover {
 
     .catalog__row {
         flex-wrap: wrap;
+    }
+
+    .benefit__title {
+        font-size: 2.5rem;
+        line-height: 2.2rem;
+    }
+
+    .benefit__text {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    .benefit:after {
+        background: #FFFFFF;
+        opacity: 0.5;
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+
+    .benefit.light:after {
+        background: #000;
     }
 
     .product {
@@ -979,7 +1011,8 @@ a:hover {
     .banner__text1 {
         margin-bottom: 10px;
     }
-    .banner__button{
+
+    .banner__button {
         margin-bottom: 10px;
     }
 
@@ -1003,7 +1036,7 @@ a:hover {
     }
 
     .product {
-        max-width: calc(50% - 8px);
+        max-width: 100%;
     }
 
     .product-info {
@@ -1016,6 +1049,7 @@ a:hover {
 
     .product-button {
         margin-bottom: 10px;
+        padding: 8px 20px;
     }
 
     .feature2__row {
@@ -1031,36 +1065,71 @@ a:hover {
         margin: 30px auto 0;
     }
 
-    .footer__nav {
+    .benefits__row {
         flex-wrap: wrap;
     }
 
-    .footer__subscription {
+    .benefit {
         max-width: 100%;
+    }
+
+    .benefit__title {
+        font-size: 2.8rem;
+        line-height: 3.2rem;
+    }
+
+    .benefit__text {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+    .footer>.container>.col-3{
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .footer__nav {
+        flex-wrap: wrap;
     }
 
     .footer__list {
         max-width: 50%;
         margin-top: 20px;
-    }
+        text-align: center;
 
+    }
+    .footer__subscription {
+        max-width: 100%;
+    }
     .footer__subscription-link {
-        margin-bottom: 20px;
+        margin: 0 auto 20px;
+    }
+    .footer__subscription-text{
+        text-align: center;
+        max-width: 100%;
+        width: 264px;
+        margin: 0 auto 20px;
+    }
+    .footer__subscription-button{
+        margin:0 auto;
     }
 
     .footer__link {
         margin-bottom: 7px;
     }
-    .benefit{
+
+    .benefit {
         padding: 10px;
     }
-    .product__img{
+
+    .product__img {
         height: 150px;
     }
-    .product-more{
+
+    .product-more {
         font-size: 1.5rem;
     }
 }
+
 
 
 
