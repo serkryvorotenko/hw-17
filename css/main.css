@@ -1058,11 +1058,32 @@ a:hover {
 
     .feature2__content {
         max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
     }
 
     .feature2__img {
         max-width: 400px;
         margin: 30px auto 0;
+    }
+    .feature2__header{
+        display: flex;
+        margin-bottom:20px;
+       gap: 15px;
+        align-items: center;
+
+    }
+    .feature2__title{
+        margin: 0;
+    }
+
+    .feature2__text{
+        text-align: center;
+    }
+    .feature2__button{
+       width: fit-content;
     }
 
     .benefits__row {
@@ -1128,6 +1149,7 @@ a:hover {
     .product-more {
         font-size: 1.5rem;
     }
+
 }
 
 
